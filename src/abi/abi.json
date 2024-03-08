@@ -1,0 +1,121 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint8",
+						"name": "number",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum CardGame.suits",
+						"name": "_suits",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "exists",
+						"type": "bool"
+					}
+				],
+				"indexed": false,
+				"internalType": "struct CardGame.Card",
+				"name": "card",
+				"type": "tuple"
+			}
+		],
+		"name": "CardPicked",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "endGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "finalWinner",
+				"type": "address"
+			}
+		],
+		"name": "GameWinner",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "PickCard",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address[]",
+				"name": "_players",
+				"type": "address[]"
+			}
+		],
+		"name": "StartGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "score",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ViewCardPicked",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint8",
+						"name": "number",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum CardGame.suits",
+						"name": "_suits",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "exists",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct CardGame.Card",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
