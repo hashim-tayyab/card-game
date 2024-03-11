@@ -31,7 +31,7 @@ const Card = ({ number, suit }: any) => {
       </svg>
     }
     return (
-        <div className="bg-white rounded-lg shadow-lg p-4 w-30 h-60 relative">
+        <div className="bg-white rounded-lg shadow-lg md:p-4 sm:w-30 h-40 md:h-60 relative mt-14 md:mt-0">
             {/* <!-- Top-left number --> */}
             <div className="absolute top-2 left-2 text-gray-600 text-[3rem] font-bold">{number}</div>
 

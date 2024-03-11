@@ -15,7 +15,7 @@ const CardContext = createContext<ContextProps>({
     setSuit: (): number => 0
 });
 
-export const GlobalContextProvider = ({ children }) => {
+export const GlobalContextProvider = ({ children }:any) => {
     const [currentCard, setCurrentCard] = useState(0);
     const [suit, setSuit] = useState(0);
 
